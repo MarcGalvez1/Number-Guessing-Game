@@ -11,7 +11,7 @@ def main():
     guessCounter = 0
 
     # Verifies that the number entered is within parameters.
-    while numberToGuess < 1 or numberToGuess >= 100:
+    while numberToGuess < 1 or numberToGuess > 100:
         print("The number that needs to be guessed should be between 1 and 100")
         numberToGuess = float(input("Player 1 enter a number between 1 and 100: "))
     else:
