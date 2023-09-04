@@ -19,10 +19,13 @@ def main():
         GuessChecker(numberToGuess, guess, guessCounter)
 
 
-def GuessChecker(numberToGuess, guess, guessCounter):
+def GuessChecker(
+    numberToGuess, guess, guessCounter
+):  # Function is used for readability.
     # Keeps the game going until the correct number is guessed
     while numberToGuess > 1 or numberToGuess < 100:
         guessCounter += 1  # Increments number of guesses
+        # Tells user if guess is too high or too low
         if guess > numberToGuess:
             print("Too high")
         if guess < numberToGuess:
